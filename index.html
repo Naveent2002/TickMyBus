@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tick My Bus</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="./images/TickmyBusDark.jpeg"> 
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .section { padding: 50px 0; }
+    .bg-cover { background-size: cover; background-position: center; background-repeat: no-repeat; }
+    .card { transition: transform 0.3s; }
+    .card:hover { transform: scale(1.05); }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+ <!-- Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="./images/TickmyBus.jpg" alt="TickmyBus Logo" style="height: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Offers</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Help</a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="modal" data-target="#loginModal" href="#">Login</a></li>
+                <li class="nav-item"><a class="btn btn-danger" data-toggle="modal" data-target="#registerModal" href="#">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <!-- Banner Section -->
+<section class="banner-section text-center text-white">
+    <div class="container">
+        <h1 class="display-5 banner-title">India's No. 1 Online Bus Ticket Booking Site</h1>
+        <p class="lead banner-subtitle">Safe and Secure Travel</p>
+        <!-- Search Form -->
+        <form class="form-inline justify-content-center mt-4 booking-form">
+            <div class="input-group mr-2">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa-regular fa-share-from-square"></i></span>
+                </div>
+                <input class="form-control" type="text" placeholder="From" required>
+            </div>
+            <div class="input-group mr-2">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa-solid fa-map-pin"></i></span>
+                </div>
+                <input class="form-control" type="text" placeholder="To" required>
+            </div>
+            <div class="input-group mr-2">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa-solid fa-calendar-days"></i></span>
+                </div>
+                <input class="form-control" type="date" required>
+            </div>
+            <button class="btn search-btn" type="submit">Search</button>
+        </form>
+    </div>
+</section>
+
+  <!-- Trending Offers -->
+  <section class="section offers-section">
+    <div class="container text-center">
+        <h2 class="section-title">Trending Diwali Offers</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="offer-card">
+                    <div class="offer-card-body">
+                        <h5 class="offer-card-title">Trichy to Coimbatore</h5>
+                        <p class="offer-card-text">Starting from ₹999</p>
+                        <a href="#" class="btn offer-btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="offer-card">
+                    <div class="offer-card-body">
+                        <h5 class="offer-card-title">Mumbai to Chennai</h5>
+                        <p class="offer-card-text">Starting from ₹2999</p>
+                        <a href="#" class="btn offer-btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="offer-card">
+                    <div class="offer-card-body">
+                        <h5 class="offer-card-title">Delhi to Kanyakumari</h5>
+                        <p class="offer-card-text">Starting from ₹5999</p>
+                        <a href="#" class="btn offer-btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Train Booking Section -->
+  <section class="train-section section bg-cover text-white">
+    <div class="container text-center">
+        <h2 class="mb-5 section-title">IRCTC Train Ticket Booking</h2>
+        <form class="form-inline justify-content-center mb-4 booking-form">
+            <div class="input-group mr-2">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa-solid fa-train"></i></span>
+                </div>
+                <input class="form-control" type="text" placeholder="From Station" required>
+            </div>
+            <div class="input-group mr-2">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa-solid fa-map-pin"></i></span>
+                </div>
+                <input class="form-control" type="text" placeholder="To Station" required>
+            </div>
+            <div class="input-group mr-2">
+                <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fa-solid fa-calendar-days"></i></span>
+                </div>
+                <input class="form-control" type="date" required>
+            </div>
+            <button class="btn search-btn" type="submit">Search Trains</button>
+        </form>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card train-card">
+                    <div class="card-body">
+                        <h5 class="card-title">CHENNAI EXPRESS</h5>
+                        <p class="card-text">Departure: 10:00 AM | Arrival: 2:00 PM</p>
+                        <p class="card-text">Price: ₹800</p>
+                        <a href="#" class="btn book-btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card train-card">
+                    <div class="card-body">
+                        <h5 class="card-title">VANTHE BHARATH</h5>
+                        <p class="card-text">Departure: 11:00 AM | Arrival: 3:00 PM</p>
+                        <p class="card-text">Price: ₹900</p>
+                        <a href="#" class="btn book-btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card train-card">
+                    <div class="card-body">
+                        <h5 class="card-title">DECCAN ODYSSEY</h5>
+                        <p class="card-text">Departure: 12:00 PM | Arrival: 4:00 PM</p>
+                        <p class="card-text">Price: ₹1000</p>
+                        <a href="#" class="btn book-btn">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Bus Partners -->
+  <section class="section bg-light text-center">
+    <div class="container">
+      <h2 class="mb-5">Tick My Bus Partners</h2>
+      <div class="row">
+        <div class="col-md-3"><img src="https://www.apsrtc.ap.gov.in/Amaravathii.jpg" alt="Partner 1" class="img-fluid"></div>
+        <div class="col-md-3"><img src="https://telugu.samayam.com/thumb/96161311/tsrtc-new-buses-96161311.jpg?imgsize=29322&width=1600&height=900&rizemode=75" alt="Partner 2" class="img-fluid"></div>
+        <div class="col-md-3"><img src="https://transport.rajasthan.gov.in/content/dam/transport/RSRTC/image/3.jpg" alt="Partner 3" class="img-fluid"></div>
+        <div class="col-md-3"><img src="https://english.mathrubhumi.com/image/contentid/policy:1.7007109:1653472949/image.jpg?$p=0f6e831&f=4x3&w=1080&q=0.8" alt="Partner 4" class="img-fluid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+        <div class="footer-row">
+            <div class="footer-column">
+                <h5>About Us</h5>
+                <ul>
+                    <li><a href="#">Company Info</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h5>Useful Links</h5>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Help Center</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h5>Contact Us</h5>
+                <ul>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Sales</a></li>
+                    <li><a href="#">Press</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h5>Follow Us</h5>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Tick My bus. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+    <!-- Modals -->
+  <!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Log in</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password" required>
+                    </div>
+                    <button type="submit" class="btn btn-danger btn-block">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <!-- Register Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="registerModalLabel">Sign Up</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+              <label for="registerEmail">Email address</label>
+              <input type="email" class="form-control" id="registerEmail" placeholder="Enter email" required>
+            </div>
+            <div class="form-group">
+              <label for="registerPassword">Password</label>
+              <input type="password" class="form-control" id="registerPassword" placeholder="Password" required>
+            </div>
+            <button type="submit" class="btn btn-danger">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script>
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    
+    navLinks.forEach(link => {
+        link.addEventListener('mouseenter', () => {
+            const activeLink = document.querySelector('.navbar-nav .nav-item.active .nav-link');
+            if (activeLink) {
+                activeLink.style.color = 'black';
+            }
+        });
+
+        link.addEventListener('mouseleave', () => {
+            const activeLink = document.querySelector('.navbar-nav .nav-item.active .nav-link');
+            if (activeLink) {
+                activeLink.style.color = 'red'; 
+            }
+        });
+    });
+</script>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

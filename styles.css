@@ -1,0 +1,552 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h5 {
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+}
+.navbar-light {
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.navbar-brand img {
+    height: 40px; 
+}
+
+.navbar-nav .nav-item {
+    margin-left: 20px; 
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #333; 
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #d32f2f; 
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #d32f2f;
+    font-weight:500; 
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: red; 
+}
+
+.navbar-light .navbar-nav .nav-link:hover + .active .nav-link {
+    color: black; 
+}
+.navbar-light .navbar-nav.btn-danger {
+    background-color: #d32f2f; 
+    transition: background-color 0.1s ease, transform 0.1s; 
+}
+
+.navbar-light .navbar-nav.btn-danger:hover {
+    background-color: #b71c1c; 
+    transform: translateY(-2px); 
+}
+
+@media (max-width: 768px) {
+    .navbar-light .navbar-nav.navbar-nav {
+        text-align: center;
+    }
+    .navbar-light .navbar-nav.nav-item {
+        margin: 10px 0; 
+    }
+}
+
+
+.banner-section {
+    background-image:url('https://s3.rdbuz.com/images/webplatform/india/Homepage-header-1200.webp');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.banner-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.banner-subtitle {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.booking-form .input-group-prepend .input-group-text {
+    background-color: #d32f2f;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.booking-form .form-control {
+    border: none;
+    border-radius: 0 5px 5px 0;
+    padding: 10px 15px;
+    transition: border-color 0.3s ease;
+}
+
+.booking-form .form-control:focus {
+    border-color: #d32f2f;
+    box-shadow: 0 0 0 0.2rem rgba(211, 47, 47, 0.25);
+}
+
+.search-btn {
+    background-color: #d32f2f;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #b71c1c;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .banner-title {
+        font-size: 28px;
+    }
+    
+    .banner-subtitle {
+        font-size: 16px;
+    }
+    
+    .booking-form .form-control {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+.offers-section {
+    background-color: #fafafa;
+    padding: 60px 0;
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #d32f2f;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.offer-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.offer-card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.offer-card-title {
+    font-size: 20px;
+    color: #d32f2f;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.offer-card-text {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.offer-btn {
+    background-color: #d32f2f;
+    color: #ffffff;
+    border: none;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.offer-btn:hover {
+    background-color: #a52727;
+    transform: translateY(-2px);
+    color: #ffffff
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 28px;
+    }
+
+    .offer-card {
+        margin: 15px 0;
+    }
+}
+
+
+.bus-partners {
+    background-color: #ffffff;
+}
+
+.bus-partners img {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.testimonials blockquote {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.testimonials blockquote .blockquote-footer {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.footer {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    padding: 50px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer h5 {
+    font-size: 18px;
+    font-weight: 350;
+    color: #ffffff;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.footer h5:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 30px;
+    height: 2px;
+    background-color: #ee3a3a;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s, border-bottom 0.3s;
+}
+
+.footer ul li a:hover {
+    color: #ffffff;
+    border-bottom: 1px solid #ee3a3a;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    margin: 10px 15px;
+    min-width: 150px;
+}
+
+.footer-column ul {
+    margin-top: 10px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    font-size: 20px;
+    color: #cccccc;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    color: #ee3a3a;
+    transform: scale(1.2);
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    color: #888888;
+    font-size: 14px;
+    border-top: 1px solid #444;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footer-column {
+        margin: 20px 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 32px;
+    }
+
+    .banner p {
+        font-size: 18px;
+    }
+
+    .form-control {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .form-inline .form-control {
+        margin-right: 0;
+    }
+
+    .form-inline {
+        flex-direction: column;
+    }
+}
+
+.train-section {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                      url('https://t3.ftcdn.net/jpg/04/54/72/12/360_F_454721249_Oz3DHWeLtg83nBjaraq3rfumeLy48LuT.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+}
+
+.train-section .section-title {
+    font-size: 36px;
+    color: #fafafa;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.booking-form .input-group-prepend .input-group-text {
+    background-color: #d32f2f;
+    color: #ffffff;
+    border: none;
+}
+
+.booking-form .form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+}
+
+.booking-form .form-control:focus {
+    border-color: #d32f2f;
+    box-shadow: 0 0 0 0.2rem rgba(211, 47, 47, 0.25);
+}
+
+.search-btn {
+    background-color: #d32f2f;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s;
+}
+
+.search-btn:hover {
+    background-color: #b71c1c;
+    transform: translateY(-2px);
+}
+
+.train-card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 20px 0;
+}
+
+.train-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.train-card .card-body {
+    padding: 20px;
+}
+
+.train-card .card-title {
+    font-size: 22px;
+    color: #d32f2f;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.train-card .card-text {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.book-btn {
+    background-color: #d32f2f;
+    color: #ffffff;
+    font-weight: 300;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.book-btn:hover {
+    background-color: #b71c1c;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .booking-form .form-control {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .train-card {
+        margin: 15px 0;
+    }
+}
+
+.modal-content {
+    border-radius: 2px;
+    box-shadow: 0 0 20px #0000001a;
+    background: #ffffff; 
+}
+
+.modal-header { 
+    color: black;
+    padding: 1.5rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    display: flex;
+    justify-content: center; 
+}
+
+.modal-title {
+    font-weight: 200;
+    font-size: 1.5rem;
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+#loginModalLabel {
+    text-align: center;
+    width: 100%;
+}
+
+#registerModalLabel{
+    text-align: center;
+    width: 100%;
+}
+
+.close {
+    color: white;
+    font-size: 1.5rem;
+    background: none; 
+    border: none; 
+    cursor: pointer; 
+}
+
+.modal-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem; 
+}
+
+.form-group label {
+    font-weight: 200;
+    color: #333;
+}
+
+.form-control {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    padding: 0.75rem;
+    font-size: 1rem; 
+    font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.form-control:focus {
+    border-color: #e94a4a;
+    box-shadow: 0 0 5px rgba(233, 74, 74, 0.5);
+}
+
+.btn-danger {
+    background-color: #e94a4a;
+    border: none; 
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-danger:hover {
+    background-color: #b71c1c;
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-danger:active {
+    transform: translateY(1px); 
+}
+
+.modal {
+    backdrop-filter: blur(5px); 
+}
